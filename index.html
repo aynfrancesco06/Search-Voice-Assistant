@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Search Voice Assistant</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.9.3/introjs.css" integrity="sha512-n/6qsbBjjZik70avxNu5SS3tXMbWby7M7xiN/43zHKB2iPTcPaB98Y7+QN0pHWIDa2EDRCW5/d7fSB5XgBdTnw==" crossorigin="anonymous"/> 
+  </head>
+
+  <body onload="introJs().start();">
+    <div class="blur-this">
+    <h1>Search Voice Assistant</h1>
+    <div id="result" data-step="3" data-intro="You can check here the words uttered on the mic" data-position="left"></div>
+   
+    <canvas id="meter" width="400" height="50"></canvas>
+    <div>
+    <button onclick="startConverting();" data-step="1" data-intro="Click this to start talking" data-position="right">
+      <i class="fa fa-microphone fa-5 btn btn-danger fa_custom" aria-hidden="true"></i>
+    </button>
+    </div>
+  
+    
+<div class="dropdown">
+  <i class="fa fa-info-circle fa-7" aria-hidden="true" data-step="2" data-intro="Use the tooltip to review the list of commands" data-position="right"></i> 
+  <div class="dropdown-content">
+    <p> To navigate to websites, use keyword "go to" + "website.com"</p> 
+    <p> To search google/youtube/wikipedia etc, use keyword "search" + "what you want to search" + "google"</p> 
+    <p> You can ask "What is the weather today" / "What time is it"</p>  
+    <p> Ask "Peso to Dollar"</p> 
+  </div>
+</div>
+
+<h3><hr> © 2020 - Ayn & Ayman </h3> 
+</div>
+
+<div class="modal">
+  <div class="modal-content">
+      <p> Best viewed in desktop version </p>
+  </div>
+</div>
+  </body>  
+  <script src="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.9.3/intro.js" integrity="sha512-u8KX8882NoHu0go0Lh2OVdOOeGgRz7rMIViN87XkI/5QfttoShU88qFda6HBlUJfcSEZopuj4stj6r7FNp4MVw==" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="volume-meter.js"></script>
+</html>
