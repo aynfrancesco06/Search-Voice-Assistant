@@ -10,37 +10,74 @@
   </head>
 
   <body onload="introJs().start();">
+    
+    <ul class="background">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+   </ul>
+
     <div class="blur-this">
     <h1>Search Voice Assistant</h1>
     <div id="result" data-step="3" data-intro="You can check here the words uttered on the mic" data-position="left"></div>
    
-    <canvas id="meter" width="400" height="50"></canvas>
+    <canvas id="meter" width="400" height="60"></canvas>
     <div>
-    <button onclick="startConverting();" data-step="1" data-intro="Click this to start talking" data-position="right">
+    <button class="button-mic" onclick="startConverting();" data-step="1" data-intro="Click this to start talking" data-position="right">
       <i class="fa fa-microphone fa-5 btn btn-danger fa_custom" aria-hidden="true"></i>
     </button>
     </div>
-  
     
-<div class="dropdown">
+    <div class="image-border">
+      <img id="logo-image" src="logos\webpage_image.jpg">
+    </div>
+
+    
+<!--<div class="dropdown">
   <i class="fa fa-info-circle fa-7" aria-hidden="true" data-step="2" data-intro="Use the tooltip to review the list of commands" data-position="right"></i> 
+-->
   <div class="dropdown-content">
     <p> To navigate to websites, use keyword "go to" + "website.com"</p> 
-    <p> To search google/youtube/wikipedia etc, use keyword "search" + "what you want to search" + "google"</p> 
-    <p> You can ask "What is the weather today" / "What time is it"</p>  
-    <p> Ask "Peso to Dollar"</p> 
+    <p> To search google/youtube/wikipedia etc, use keyword "search" + "youtube/google/wikipedia" + "what you want to search"</p> 
+    <p> Ask Google anything, date today, weather today, etc.</p>   
   </div>
-</div>
+<!--</div> -->
 
 <h3><hr> © 2020 - Ayn & Ayman </h3> 
 </div>
+
 
 <div class="modal">
   <div class="modal-content">
       <p> Best viewed in desktop version </p>
   </div>
 </div>
-  </body>  
+
+<button id="myBtn">About Our App</button>
+<div class="about-modal">
+  <div class="about-modal-content">
+    <span class="close">&times;</span>
+    <p>This Application is created with the following:</p>
+    <p>Web Speech API</p>
+    <p>Intro JS plugin</p>
+    <p>Font Awesome for CSS design</p>
+    <p>Features:</p>
+    <p>Navigate to different websites
+       <br>Ask Google anything 
+       <br>Find videos in youtube      
+    </p> 
+  </div>
+</div>
+
+
+</body>  
   <script src="main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.9.3/intro.js" integrity="sha512-u8KX8882NoHu0go0Lh2OVdOOeGgRz7rMIViN87XkI/5QfttoShU88qFda6HBlUJfcSEZopuj4stj6r7FNp4MVw==" crossorigin="anonymous"></script>
     <script src="script.js"></script>
